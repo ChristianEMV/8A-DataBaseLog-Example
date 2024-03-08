@@ -14,14 +14,17 @@
       <b-icon icon="tools" style="color: white"></b-icon>
       <b-nav-item-dropdown text="Herramientas" style="color: white">
         <b-dropdown-item @click="goToInicio">
-          <b-icon icon="house"></b-icon> Inicio
+          <b-icon icon="house" variant="dark"></b-icon> Inicio
         </b-dropdown-item>
         <b-dropdown-item @click="goToOperaciones">
-          <b-icon icon="card-list"></b-icon> Operaciones
+          <b-icon icon="card-list" variant="success"></b-icon> Operaciones
         </b-dropdown-item>
-        <b-dropdown-item href="#"
-          ><b-icon icon="people"></b-icon> Empleados</b-dropdown-item
-        >
+        <b-dropdown-item href="#">
+          <b-icon icon="people" variant="primary"></b-icon> Empleados
+        </b-dropdown-item>
+        <b-dropdown-item href="#">
+          <b-icon icon="door-open" variant="danger"></b-icon> Cerrar sesión
+        </b-dropdown-item>
       </b-nav-item-dropdown>
     </b-navbar>
     <b-container fluid>
