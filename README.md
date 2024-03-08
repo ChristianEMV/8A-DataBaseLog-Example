@@ -3,6 +3,14 @@ Nombre del proyecto: Peliculas_CineDot
 Buena practica implementada: Bitacora de Base de Datos
 
 Antes de ejecutar el FrontEnd
+•Desde la base de datos se deberan las categorias en la tabla Categories:
+
+SELECT * FROM peliculas.categories;
+INSERT INTO `peliculas`.`categories` (`description`, `name`, `status`) VALUES ('Peliculas de Accion', 'Accion', '1');
+INSERT INTO `peliculas`.`categories` (`description`, `name`, `status`) VALUES ('Peliculas de Suspenso', 'Suspenso', '1');
+INSERT INTO `peliculas`.`categories` (`description`, `name`, `status`) VALUES ('Peliculas de Terror', 'Terror', '1');
+INSERT INTO `peliculas`.`categories` (`description`, `name`, `status`) VALUES ('Peliculas de Romance', 'Romance', '1');
+
 •npm i
 Para ejecturar el FrontEnd
 •npm run dev
