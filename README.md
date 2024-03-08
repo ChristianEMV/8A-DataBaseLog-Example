@@ -1,5 +1,7 @@
 Nombre del proyecto: Peliculas_CineDot
+
 Buena practica implementada: Bitacora de Base de Datos
+
 Antes de ejecutar el FrontEnd
 •npm i
 Para ejecturar el FrontEnd
