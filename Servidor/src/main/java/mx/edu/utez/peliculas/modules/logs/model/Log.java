@@ -1,6 +1,7 @@
 package mx.edu.utez.peliculas.modules.logs.model;
 
 import jakarta.persistence.*;
+import java.time.LocalDateTime;
 
 @Entity
 @Table(name = "logs")
@@ -11,6 +12,7 @@ public class Log {
     private String tabla;
     private String operacion;
     private String descripcion;
+    private LocalDateTime fechaHora;
 
     public Long getId() {
         return id;
@@ -42,6 +44,14 @@ public class Log {
 
     public void setDescripcion(String descripcion) {
         this.descripcion = descripcion;
+    }
+
+    public LocalDateTime getFechaHora() {
+        return fechaHora;
+    }
+
+    public void setFechaHora(LocalDateTime fechaHora) {
+        this.fechaHora = fechaHora;
     }
 
 

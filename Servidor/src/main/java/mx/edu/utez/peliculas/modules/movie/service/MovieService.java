@@ -15,6 +15,7 @@ import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
 import java.sql.SQLException;
+import java.time.LocalDateTime;
 import java.util.Optional;
 
 @Service
@@ -112,6 +113,7 @@ public class MovieService {
         log.setTabla("peliculas");
         log.setOperacion("INSERCIÓN");
         log.setDescripcion("Nueva pelicula creada: " + savedMovie.getTitle());
+        log.setFechaHora(LocalDateTime.now());
         logService.registrarLog(log);
 
         // Crea la respuesta
@@ -152,6 +154,7 @@ public class MovieService {
         log.setTabla("peliculas");
         log.setOperacion("ACTUALIZACIÓN");
         log.setDescripcion("Película actualizada: " + updatedMovie.getTitle());
+        log.setFechaHora(LocalDateTime.now());
         logService.registrarLog(log);
 
         // Crea la respuesta
@@ -184,6 +187,7 @@ public class MovieService {
             log.setTabla("peliculas");
             log.setOperacion("ELIMINACIÓN");
             log.setDescripcion("Película eliminada: " + deleteMovie.getTitle());
+            log.setFechaHora(LocalDateTime.now());
             logService.registrarLog(log);
 
             // Crea la respuesta
